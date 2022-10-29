@@ -1,6 +1,6 @@
 // Laboratorio 4 Microcontroladores
 // Yenner Gonzalez Araya - B83375
-// Gabriel Barahona Otoya - B7....
+// Gabriel Barahona Otoya - B70896
 
 
 // - - - - - - - - - - - - - - - - INCLUDES - - - - - - - - - - - - - - - -
@@ -19,9 +19,12 @@
 #include "console.h"
 
     // gyro
+#include <libopencm3/stm32/spi.h>
 
+	// batt
+#include <libopencm3/stm32/adc.h>
 
-
+// - - - - - - - - - - - - - - - - DEFINES - - - - - - - - - - - - - - - -
 
 
 
@@ -33,7 +36,6 @@
 
 // - - - - - - - - - - - - - - - - SETUP FUNCTIONS - - - - - - - - - - - - - - - -
 
-// clock setup
 
 // gpio setup
 static void gpio_setup(void)
@@ -46,6 +48,8 @@ static void gpio_setup(void)
 
 }
 
+
+
 // button setup
 
 static void button_setup(void)
@@ -57,8 +61,6 @@ static void button_setup(void)
 	gpio_mode_setup(GPIOA, GPIO_MODE_INPUT, GPIO_PUPD_NONE, GPIO0);
 }
 
-
-// lcd setup
 
 
 
@@ -79,46 +81,37 @@ static void button_setup(void)
 // read accel
 
 // read batt
+static void batt_setup(void)
+{
+	/* Enable GPIOA clock. */
+	rcc_periph_clock_enable(RCC_GPIOC);
 
-// print accel + batt on display
+	/* Set GPIO3 (in GPIO port C) to 'input open-drain'. */
+	gpio_mode_setup(GPIOC, GPIO_MODE_ANALOG, GPIO_PUPD_NONE, GPIO3);
 
-
-// check button/switch state
-
-// if switch state == 1 
-// send accel data
-// turn on LED
-
-
-
-// else
-// turn off LED
-// do not send accel data
-
+	// set up Orange LED as output
+}
 
 
 
 // - - - - - - - - - - - - - - - - MAIN - - - - - - - - - - - - - - - -
 int main (void)
 {
-    // setup
+    // Setup
 
     clock_setup();
 	button_setup();
+	batt_setup();
     gpio_setup();
-
 
 	console_setup(115200);
 	sdram_init();
 	lcd_spi_init();
-	//lcd_show_frame();
 	gfx_init(lcd_draw_pixel, 240, 320);
 	gfx_fillScreen(LCD_BLACK);
 
 	// funcionamiento continuo
-	int i;
     while(1) {
-
 		gfx_fillScreen(LCD_BLACK);
 		gfx_setTextColor(LCD_BLUE, LCD_BLACK);
 		gfx_setTextSize(2);
@@ -127,10 +120,11 @@ int main (void)
 
 		gfx_puts("_Sismografo_");
 
-		// get gyro_values
+		// get gyro_values - placeholder values
 		char* accx = "123";
 		char* accy = "852";
 		char* accz = "375";
+		
 
 		// get batt_values
 
@@ -165,9 +159,6 @@ int main (void)
 
 			gfx_setCursor(120, 280);
 			gfx_puts("OFF");
-			lcd_show_frame();
-
-
 		}
         else {
             // parpadea led si no se ha presionado el boton
@@ -176,10 +167,16 @@ int main (void)
 			// funcionamiento comunicacion va aca
 			gfx_setCursor(120, 280);
 			gfx_puts("ON");
-			lcd_show_frame();
         }
 
-        for (i = 0; i < 30000000; i++) { // Espera un tiempo
+		// Corregir esta comparacion
+		if ((gpio_get(GPIOC, GPIO3)) < 3.9){
+			gfx_setCursor(90, 250);
+			gfx_puts("LOW");
+		}
+		lcd_show_frame();
+
+        for (int i = 0; i < 30000000; i++) { // Espera un tiempo
 			__asm__("nop");
 		}
     }

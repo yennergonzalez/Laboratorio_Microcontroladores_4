@@ -27,4 +27,12 @@ lab4.o: lab4.c ../../../../../libopencm3//include/libopencm3/stm32/rcc.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
  /usr/include/newlib/_ansi.h /usr/include/newlib/setjmp.h \
  /usr/include/newlib/machine/setjmp.h sdram.h lcd-spi.h gfx.h clock.h \
- console.h
+ console.h ../../../../../libopencm3//include/libopencm3/stm32/spi.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/f4/spi.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/spi_common_v1_frf.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/spi_common_v1.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/spi_common_all.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/adc.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/f4/adc.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/adc_common_v1_multi.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/adc_common_v1.h
