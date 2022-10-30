@@ -35,4 +35,10 @@ lab4.o: lab4.c ../../../../../libopencm3//include/libopencm3/stm32/rcc.h \
  ../../../../../libopencm3//include/libopencm3/stm32/adc.h \
  ../../../../../libopencm3//include/libopencm3/stm32/f4/adc.h \
  ../../../../../libopencm3//include/libopencm3/stm32/common/adc_common_v1_multi.h \
- ../../../../../libopencm3//include/libopencm3/stm32/common/adc_common_v1.h
+ ../../../../../libopencm3//include/libopencm3/stm32/common/adc_common_v1.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/usart.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/f4/usart.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/usart_common_f24.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/usart_common_f124.h \
+ ../../../../../libopencm3//include/libopencm3/stm32/common/usart_common_all.h \
+ /usr/include/newlib/string.h /usr/include/newlib/sys/string.h
