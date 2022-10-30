@@ -17,6 +17,7 @@
 import paho.mqtt.client as mqtt
 from time import sleep
 import random
+import csv
 
 broker="iot.eie.ucr.ac.cr"
 topic_pub='v1/devices/me/telemetry'
@@ -26,23 +27,42 @@ client = mqtt.Client()
 client.username_pw_set("l4gy9675")
 client.connect(broker)
 
-battery = 1
+f= open("data.csv")
+reader = csv.reader(f)
 
-for i in range(5):
-    x = random.randrange(-100, 100)
-    y = random.randrange(-100, 100)
-    z = random.randrange(-100, 100)
-    msgx = '{"x":"'+ str(x) + '"}'
-    msgy = '{"y":"'+ str(y) + '"}'
-    msgz = '{"z":"'+ str(z) + '"}'
+for row in reader:
+    print (row)
 
-    if battery==0:
-        msgbattery = '{"Battery level":"High level"}'
-    elif battery==1:
+xn = 0
+yn = 1
+zn = 2
+bn = 3
+n=0
+
+while n<1:
+    index = (xn, yn, zn, bn)
+    datos = [row[i] for i in index]
+    print(datos)
+
+    battery = datos[bn]
+
+    msgx = '{"x":"'+ datos[xn] + '"}'
+    msgy = '{"y":"'+ datos[yn] + '"}'
+    msgz = '{"z":"'+ datos[zn] + '"}'
+
+    if (battery<="50"):
         msgbattery = '{"Battery level":"Low level"}'
+    elif (battery>="50"):
+        msgbattery = '{"Battery level":"High level"}'
 
     client.publish(topic_pub, msgx)
     client.publish(topic_pub, msgy)
     client.publish(topic_pub, msgz)
     client.publish(topic_pub, msgbattery)
     sleep(0.1)
+
+    xn = xn+4
+    yn = yn+4
+    zn = zn+4
+    bn = bn+4
+    n = n+1
