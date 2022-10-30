@@ -33,7 +33,6 @@
 
 
 
-
 // - - - - - - - - - - - - - - - - SETUP FUNCTIONS - - - - - - - - - - - - - - - -
 
 
@@ -81,15 +80,35 @@ static void button_setup(void)
 // read accel
 
 // read batt
+
 static void batt_setup(void)
 {
-	/* Enable GPIOA clock. */
-	rcc_periph_clock_enable(RCC_GPIOC);
-
-	/* Set GPIO3 (in GPIO port C) to 'input open-drain'. */
-	gpio_mode_setup(GPIOC, GPIO_MODE_ANALOG, GPIO_PUPD_NONE, GPIO3);
-
+	rcc_periph_clock_enable(RCC_GPIOG);
 	// set up Orange LED as output
+	gpio_mode_setup(GPIOG, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO14);
+}
+
+static void adc_setup(void)
+{
+	rcc_periph_clock_enable(RCC_ADC1);
+	//gpio_mode_setup(GPIOA, GPIO_MODE_ANALOG, GPIO_PUPD_NONE, GPIO0);
+	gpio_mode_setup(GPIOA, GPIO_MODE_ANALOG, GPIO_PUPD_NONE, GPIO1);
+	adc_power_off(ADC1);
+	adc_disable_scan_mode(ADC1);
+	adc_set_sample_time_on_all_channels(ADC1, ADC_SMPR_SMP_3CYC);
+	adc_power_on(ADC1);
+
+}
+
+static uint16_t read_adc_naiive(uint8_t channel)
+{
+	uint8_t channel_array[16];
+	channel_array[0] = channel;
+	adc_set_regular_sequence(ADC1, 1, channel_array);
+	adc_start_conversion_regular(ADC1);
+	while (!adc_eoc(ADC1));
+	uint16_t reg16 = adc_read_regular(ADC1);
+	return reg16;
 }
 
 
@@ -102,7 +121,8 @@ int main (void)
     clock_setup();
 	button_setup();
 	batt_setup();
-    gpio_setup();
+    adc_setup();
+	gpio_setup();
 
 	console_setup(115200);
 	sdram_init();
@@ -127,6 +147,8 @@ int main (void)
 		
 
 		// get batt_values
+
+		uint16_t input_adc1 = read_adc_naiive(1);
 
 
 		// print display
@@ -169,14 +191,25 @@ int main (void)
 			gfx_puts("ON");
         }
 
-		// Corregir esta comparacion
-		if ((gpio_get(GPIOC, GPIO3)) < 3.9){
-			gfx_setCursor(90, 250);
+		
+		// Mostrar estado bateria y parpadear led advertencia de ser necesario
+		gfx_setCursor(90, 250);
+		if (input_adc1 < 3.9){
 			gfx_puts("LOW");
+			gpio_toggle(GPIOG, GPIO14);
+
+			// Enviar notificacion de bateria baja al dashboard
+
+		}
+
+		else{
+			gfx_puts("HIGH");
+			gpio_clear(GPIOG, GPIO14);
 		}
 		lcd_show_frame();
 
-        for (int i = 0; i < 30000000; i++) { // Espera un tiempo
+		// Esperar un tiempo
+        for (int i = 0; i < 30000000; i++) {
 			__asm__("nop");
 		}
     }
