@@ -14,10 +14,18 @@
 # limitations under the License.
 #
 
+
+# Laboratorio de Microcontroladores
+# Laboratorio 4 
+# Gabriel Barahona Otoya B70896
+# Yenner Gonzalez Araya B83375
+# Script Python
+
 import paho.mqtt.client as mqtt
 from time import sleep
 import random
 import csv
+import math
 
 broker="iot.eie.ucr.ac.cr"
 topic_pub='v1/devices/me/telemetry'
@@ -30,29 +38,40 @@ client.connect(broker)
 f= open("data.csv")
 reader = csv.reader(f)
 
+print("Datos extraídos del archivo .csv: ")
+
 for row in reader:
-    print (row)
+    print(row)
 
-xn = 0
-yn = 1
-zn = 2
-bn = 3
-n=0
+print("Enviando información a la plataforma IoT Thingsboard")
+print("...")
 
-while n<1:
-    index = (xn, yn, zn, bn)
-    datos = [row[i] for i in index]
-    print(datos)
+xn = [0]
+yn = [0]
+zn = [0]
+bn = [0]
+n = 0
+i = 0
 
-    battery = datos[bn]
+limit = math.floor(len(row)/4)
 
-    msgx = '{"x":"'+ datos[xn] + '"}'
-    msgy = '{"y":"'+ datos[yn] + '"}'
-    msgz = '{"z":"'+ datos[zn] + '"}'
+while n<limit:
+    xn = row[i]
+    yn = row[i+1]
+    zn = row[i+2]
+    bn = row[i+3]
+    
+    datos = [xn, yn, zn, bn]
 
-    if (battery<="50"):
+    battery = bn
+
+    msgx = '{"x":"'+ datos[0] + '"}'
+    msgy = '{"y":"'+ datos[1] + '"}'
+    msgz = '{"z":"'+ datos[2] + '"}'
+
+    if (int(battery)<=50):
         msgbattery = '{"Battery level":"Low level"}'
-    elif (battery>="50"):
+    elif (int(battery)>=50):
         msgbattery = '{"Battery level":"High level"}'
 
     client.publish(topic_pub, msgx)
@@ -61,8 +80,8 @@ while n<1:
     client.publish(topic_pub, msgbattery)
     sleep(0.1)
 
-    xn = xn+4
-    yn = yn+4
-    zn = zn+4
-    bn = bn+4
+    i = i+4
     n = n+1
+
+
+print("La información se ha subido con éxito")
