@@ -69,10 +69,12 @@ while n<limit:
     msgy = '{"y":"'+ datos[1] + '"}'
     msgz = '{"z":"'+ datos[2] + '"}'
 
-    if (int(battery)<=50):
+    if (int(battery)<=30):
         msgbattery = '{"Battery level":"Low level"}'
-    elif (int(battery)>=50):
+    elif (int(battery)>=70):
         msgbattery = '{"Battery level":"High level"}'
+    elif (30<int(battery)<70):
+    	msgbattery = '{"Battery level":"Mid level"}'
 
     client.publish(topic_pub, msgx)
     client.publish(topic_pub, msgy)
