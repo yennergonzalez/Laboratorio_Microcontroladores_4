@@ -54,9 +54,9 @@
 // - - - - - - - - - - - - - - - - GLOBAL VARIABLES - - - - - - - - - - - - - - - -
 
 // Store data read from gyro axes - initialized as zero
-uint16_t axis_data_x = 0;
-uint16_t axis_data_y = 0;
-uint16_t axis_data_z = 0;
+int16_t axis_data_x = 0;
+int16_t axis_data_y = 0;
+int16_t axis_data_z = 0;
 
 // - - - - - - - - - - - - - - - - SETUP FUNCTIONS - - - - - - - - - - - - - - - -
 
@@ -197,7 +197,7 @@ void read_xyz(void)
 	spi_send(SPI5, GYR_OUT_X_H | GYR_RNW);
 	spi_read(SPI5);
 	spi_send(SPI5, 0);
-	axis_data_x |=spi_read(SPI5) << 8;
+	axis_data_x |= spi_read(SPI5) << 8;
 	gpio_set(GPIOC, GPIO1);
 
 	// read y axis
@@ -212,7 +212,7 @@ void read_xyz(void)
 	spi_send(SPI5, GYR_OUT_Y_H | GYR_RNW);
 	spi_read(SPI5);
 	spi_send(SPI5, 0);
-	axis_data_y|=spi_read(SPI5) << 8;
+	axis_data_y|= spi_read(SPI5) << 8;
 	gpio_set(GPIOC, GPIO1);
 
 	// read z axis
@@ -227,7 +227,7 @@ void read_xyz(void)
 	spi_send(SPI5, GYR_OUT_Z_H | GYR_RNW);
 	spi_read(SPI5);
 	spi_send(SPI5, 0);
-	axis_data_z|=spi_read(SPI5) << 8;
+	axis_data_z|= spi_read(SPI5) << 8;
 	gpio_set(GPIOC, GPIO1);
 
 	axis_data_x = axis_data_x*L3GD20_SENSITIVITY_250DPS;
@@ -256,6 +256,7 @@ int main(void)
 	gfx_init(lcd_draw_pixel, 240, 320);
 	gfx_fillScreen(LCD_BLACK);
 
+
 	// run loop
 	while (1) {
 
@@ -271,19 +272,29 @@ int main(void)
 		// button/switch
 		tx_disable = gpio_get(GPIOA, GPIO0);
 
-		// gyro		
+		// gyro
+
+		// Correct gyro bias
+		int16_t past_axis_data_x = axis_data_x;
+		int16_t past_axis_data_y = axis_data_y;
+		int16_t past_axis_data_z = axis_data_z;
+
 		gpio_clear(GPIOC, GPIO1); 
 		read_xyz();
 		gpio_set(GPIOC, GPIO1);
+
+		int16_t print_axis_data_x = axis_data_x-past_axis_data_x;
+		int16_t print_axis_data_y = axis_data_y-past_axis_data_y;
+		int16_t print_axis_data_z = axis_data_z-past_axis_data_z;
 
 		char xstr[16], ystr[16], zstr[16];
 		char* accxptr = &xstr;
 		char* accyptr = &ystr;
 		char* acczptr = &zstr;
 
-		itoa(axis_data_x, xstr, 10);
-		itoa(axis_data_y, ystr, 10);
-		itoa(axis_data_z, zstr, 10);
+		itoa(print_axis_data_x, xstr, 10);
+		itoa(print_axis_data_y, ystr, 10);
+		itoa(print_axis_data_z, zstr, 10);
 
 		// LEDs blink/off
 	
@@ -329,7 +340,7 @@ int main(void)
 		// print batt_and_comms_status
 		gfx_setTextSize(1);
 		gfx_setCursor(10, 250);
-		gfx_puts("Bateria: ");
+		gfx_puts("Battery: ");
 		gfx_setCursor(90, 250);
 		gfx_puts(adcptr);
 		gfx_puts(" %");
