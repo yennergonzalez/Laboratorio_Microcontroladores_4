@@ -1,4 +1,5 @@
-lab4.o: lab4.c ../../../../../libopencm3//include/libopencm3/stm32/rcc.h \
+lcd-serial.o: lcd-serial.c \
+ ../../../../../libopencm3//include/libopencm3/stm32/rcc.h \
  ../../../../../libopencm3//include/libopencm3/cm3/common.h \
  /usr/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \

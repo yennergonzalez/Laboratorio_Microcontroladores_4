@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                              lab4.o (adc_power_off)
+                              lcd-serial.o (adc_power_off)
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
-                              lab4.o (adc_power_on)
+                              lcd-serial.o (adc_power_on)
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
-                              lab4.o (adc_set_sample_time_on_all_channels)
+                              lcd-serial.o (adc_set_sample_time_on_all_channels)
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
                               sdram.o (sdram_timing)
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
@@ -39,9 +39,9 @@ Archive member included to satisfy reference by file (symbol)
 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
                               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o) (pwr_set_vos_scale)
 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
-                              lab4.o (itoa)
+                              lcd-serial.o (itoa)
 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
-                              lab4.o (strlen)
+                              lcd-serial.o (strlen)
 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-utoa.o)
                               /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o) (__utoa)
 
@@ -286,92 +286,92 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x52 gfx.o
  .debug_macro   0x0000000000000000       0x35 gfx.o
  .debug_macro   0x0000000000000000       0x9c gfx.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .group         0x0000000000000000        0x8 lab4.o
- .text          0x0000000000000000        0x0 lab4.o
- .data          0x0000000000000000        0x0 lab4.o
- .bss           0x0000000000000000        0x0 lab4.o
- .debug_macro   0x0000000000000000      0x8aa lab4.o
- .debug_macro   0x0000000000000000       0x1c lab4.o
- .debug_macro   0x0000000000000000       0x22 lab4.o
- .debug_macro   0x0000000000000000       0x4f lab4.o
- .debug_macro   0x0000000000000000       0x44 lab4.o
- .debug_macro   0x0000000000000000       0xfd lab4.o
- .debug_macro   0x0000000000000000       0x5e lab4.o
- .debug_macro   0x0000000000000000      0x1df lab4.o
- .debug_macro   0x0000000000000000       0x22 lab4.o
- .debug_macro   0x0000000000000000       0xe8 lab4.o
- .debug_macro   0x0000000000000000       0x76 lab4.o
- .debug_macro   0x0000000000000000      0x280 lab4.o
- .debug_macro   0x0000000000000000       0x8e lab4.o
- .debug_macro   0x0000000000000000       0x28 lab4.o
- .debug_macro   0x0000000000000000      0xcea lab4.o
- .debug_macro   0x0000000000000000       0x76 lab4.o
- .debug_macro   0x0000000000000000      0x37e lab4.o
- .debug_macro   0x0000000000000000       0xca lab4.o
- .debug_macro   0x0000000000000000       0x52 lab4.o
- .debug_macro   0x0000000000000000       0x35 lab4.o
- .debug_macro   0x0000000000000000       0x9c lab4.o
- .debug_macro   0x0000000000000000      0x16d lab4.o
- .debug_macro   0x0000000000000000       0x52 lab4.o
- .debug_macro   0x0000000000000000       0x1f lab4.o
- .debug_macro   0x0000000000000000       0x43 lab4.o
- .debug_macro   0x0000000000000000       0x20 lab4.o
- .debug_macro   0x0000000000000000      0x187 lab4.o
- .debug_macro   0x0000000000000000      0x330 lab4.o
- .debug_macro   0x0000000000000000       0x35 lab4.o
- .debug_macro   0x0000000000000000       0x94 lab4.o
- .debug_macro   0x0000000000000000      0x29e lab4.o
- .debug_macro   0x0000000000000000       0xa0 lab4.o
- .debug_macro   0x0000000000000000       0xde lab4.o
- .debug_macro   0x0000000000000000       0x16 lab4.o
- .debug_macro   0x0000000000000000       0x76 lab4.o
- .debug_macro   0x0000000000000000       0x58 lab4.o
- .debug_macro   0x0000000000000000      0x2eb lab4.o
- .debug_macro   0x0000000000000000       0x16 lab4.o
- .debug_macro   0x0000000000000000       0x22 lab4.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .group         0x0000000000000000        0x8 lcd-serial.o
+ .text          0x0000000000000000        0x0 lcd-serial.o
+ .data          0x0000000000000000        0x0 lcd-serial.o
+ .bss           0x0000000000000000        0x0 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x8aa lcd-serial.o
+ .debug_macro   0x0000000000000000       0x1c lcd-serial.o
+ .debug_macro   0x0000000000000000       0x22 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x4f lcd-serial.o
+ .debug_macro   0x0000000000000000       0x44 lcd-serial.o
+ .debug_macro   0x0000000000000000       0xfd lcd-serial.o
+ .debug_macro   0x0000000000000000       0x5e lcd-serial.o
+ .debug_macro   0x0000000000000000      0x1df lcd-serial.o
+ .debug_macro   0x0000000000000000       0x22 lcd-serial.o
+ .debug_macro   0x0000000000000000       0xe8 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x76 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x280 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x8e lcd-serial.o
+ .debug_macro   0x0000000000000000       0x28 lcd-serial.o
+ .debug_macro   0x0000000000000000      0xcea lcd-serial.o
+ .debug_macro   0x0000000000000000       0x76 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x37e lcd-serial.o
+ .debug_macro   0x0000000000000000       0xca lcd-serial.o
+ .debug_macro   0x0000000000000000       0x52 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x35 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x9c lcd-serial.o
+ .debug_macro   0x0000000000000000      0x16d lcd-serial.o
+ .debug_macro   0x0000000000000000       0x52 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x1f lcd-serial.o
+ .debug_macro   0x0000000000000000       0x43 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x20 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x187 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x330 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x35 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x94 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x29e lcd-serial.o
+ .debug_macro   0x0000000000000000       0xa0 lcd-serial.o
+ .debug_macro   0x0000000000000000       0xde lcd-serial.o
+ .debug_macro   0x0000000000000000       0x16 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x76 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x58 lcd-serial.o
+ .debug_macro   0x0000000000000000      0x2eb lcd-serial.o
+ .debug_macro   0x0000000000000000       0x16 lcd-serial.o
+ .debug_macro   0x0000000000000000       0x22 lcd-serial.o
  .group         0x0000000000000000        0x8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .group         0x0000000000000000        0x8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .group         0x0000000000000000        0x8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
@@ -1380,7 +1380,7 @@ LOAD clock.o
 LOAD console.o
 LOAD lcd-spi.o
 LOAD gfx.o
-LOAD lab4.o
+LOAD lcd-serial.o
 LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a
 LOAD ../../../../../libopencm3//lib/libopencm3_stm32f4.a
 START GROUP
@@ -1475,10 +1475,10 @@ END GROUP
                 0x00000000080009d8        0xc gfx.o
                 0x00000000080009d8                gfx_setTextColor
  .text.read_xyz
-                0x00000000080009e4      0x1a8 lab4.o
+                0x00000000080009e4      0x1a8 lcd-serial.o
                 0x00000000080009e4                read_xyz
  .text.startup.main
-                0x0000000008000b8c      0x438 lab4.o
+                0x0000000008000b8c      0x438 lcd-serial.o
                 0x0000000008000b8c                main
  .text.adc_power_off
                 0x0000000008000fc4        0xa ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
@@ -1815,7 +1815,7 @@ END GROUP
  .rodata.mcm_font
                 0x0000000008001aff      0x480 gfx.o
  .rodata.main.str1.1
-                0x0000000008001f7f       0x48 lab4.o
+                0x0000000008001f7f       0x48 lcd-serial.o
  .rodata.CSWTCH.2
                 0x0000000008001fc7        0x3 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
  *fill*         0x0000000008001fca        0x2 
@@ -1922,13 +1922,13 @@ END GROUP
                 0x00000000200000bc       0x14 gfx.o
                 0x00000000200000bc                __gfx_state
  .bss.axis_data_x
-                0x00000000200000d0        0x2 lab4.o
+                0x00000000200000d0        0x2 lcd-serial.o
                 0x00000000200000d0                axis_data_x
  .bss.axis_data_y
-                0x00000000200000d2        0x2 lab4.o
+                0x00000000200000d2        0x2 lcd-serial.o
                 0x00000000200000d2                axis_data_y
  .bss.axis_data_z
-                0x00000000200000d4        0x2 lab4.o
+                0x00000000200000d4        0x2 lcd-serial.o
                 0x00000000200000d4                axis_data_z
  *(COMMON)
                 0x00000000200000d8                . = ALIGN (0x4)
@@ -1940,7 +1940,7 @@ END GROUP
                 0x00000000200000d8                . = ALIGN (0x4)
                 0x00000000200000d8                end = .
                 0x0000000020030000                PROVIDE (_stack, (ORIGIN (ram) + LENGTH (ram)))
-OUTPUT(lab4.elf elf32-littlearm)
+OUTPUT(lcd-serial.elf elf32-littlearm)
 
 .debug_info     0x0000000000000000     0xcfd5
  .debug_info    0x0000000000000000      0x9d9 sdram.o
@@ -1948,7 +1948,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_info    0x0000000000000d1e      0xa36 console.o
  .debug_info    0x0000000000001754      0xe48 lcd-spi.o
  .debug_info    0x000000000000259c     0x1ce5 gfx.o
- .debug_info    0x0000000000004281     0x21b0 lab4.o
+ .debug_info    0x0000000000004281     0x21b0 lcd-serial.o
  .debug_info    0x0000000000006431      0x820 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_info    0x0000000000006c51      0x378 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_info    0x0000000000006fc9      0x179 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -1978,7 +1978,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_abbrev  0x00000000000002fe      0x1a8 console.o
  .debug_abbrev  0x00000000000004a6      0x32e lcd-spi.o
  .debug_abbrev  0x00000000000007d4      0x3d1 gfx.o
- .debug_abbrev  0x0000000000000ba5      0x359 lab4.o
+ .debug_abbrev  0x0000000000000ba5      0x359 lcd-serial.o
  .debug_abbrev  0x0000000000000efe      0x142 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_abbrev  0x0000000000001040      0x14e ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_abbrev  0x000000000000118e       0xcf ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2008,7 +2008,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_loc     0x0000000000000066      0x190 console.o
  .debug_loc     0x00000000000001f6      0x404 lcd-spi.o
  .debug_loc     0x00000000000005fa     0x145b gfx.o
- .debug_loc     0x0000000000001a55      0x186 lab4.o
+ .debug_loc     0x0000000000001a55      0x186 lcd-serial.o
  .debug_loc     0x0000000000001bdb      0x3d2 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_loc     0x0000000000001fad      0x120 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_loc     0x00000000000020cd       0xce ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2042,7 +2042,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_aranges
                 0x00000000000000e0       0xf8 gfx.o
  .debug_aranges
-                0x00000000000001d8       0x28 lab4.o
+                0x00000000000001d8       0x28 lcd-serial.o
  .debug_aranges
                 0x0000000000000200      0x158 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_aranges
@@ -2094,7 +2094,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_ranges  0x0000000000000038       0x38 console.o
  .debug_ranges  0x0000000000000070       0xa8 lcd-spi.o
  .debug_ranges  0x0000000000000118      0x148 gfx.o
- .debug_ranges  0x0000000000000260       0xe8 lab4.o
+ .debug_ranges  0x0000000000000260       0xe8 lcd-serial.o
  .debug_ranges  0x0000000000000348      0x148 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_ranges  0x0000000000000490       0x98 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_ranges  0x0000000000000528       0x30 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2172,12 +2172,12 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_macro   0x0000000000004812       0x22 gfx.o
  .debug_macro   0x0000000000004834       0x58 gfx.o
  .debug_macro   0x000000000000488c       0x16 gfx.o
- .debug_macro   0x00000000000048a2      0x2fb lab4.o
- .debug_macro   0x0000000000004b9d      0x449 lab4.o
- .debug_macro   0x0000000000004fe6      0x2d5 lab4.o
- .debug_macro   0x00000000000052bb      0x1be lab4.o
- .debug_macro   0x0000000000005479       0x10 lab4.o
- .debug_macro   0x0000000000005489       0x10 lab4.o
+ .debug_macro   0x00000000000048a2      0x2fb lcd-serial.o
+ .debug_macro   0x0000000000004b9d      0x449 lcd-serial.o
+ .debug_macro   0x0000000000004fe6      0x2d5 lcd-serial.o
+ .debug_macro   0x00000000000052bb      0x1be lcd-serial.o
+ .debug_macro   0x0000000000005479       0x10 lcd-serial.o
+ .debug_macro   0x0000000000005489       0x10 lcd-serial.o
  .debug_macro   0x0000000000005499       0xc7 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_macro   0x0000000000005560       0xc7 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_macro   0x0000000000005627       0xc7 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2210,37 +2210,37 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_macro   0x0000000000006cd4       0xd7 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_idcache.o)
  .debug_macro   0x0000000000006dab       0xb8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
 
-.debug_line     0x0000000000000000     0x5b9c
+.debug_line     0x0000000000000000     0x5ba2
  .debug_line    0x0000000000000000      0x33d sdram.o
  .debug_line    0x000000000000033d      0x324 clock.o
  .debug_line    0x0000000000000661      0x4df console.o
  .debug_line    0x0000000000000b40      0x498 lcd-spi.o
  .debug_line    0x0000000000000fd8      0x5b4 gfx.o
- .debug_line    0x000000000000158c      0x5d3 lab4.o
- .debug_line    0x0000000000001b5f      0x523 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
- .debug_line    0x0000000000002082      0x36e ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
- .debug_line    0x00000000000023f0      0x2b3 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
- .debug_line    0x00000000000026a3      0x261 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
- .debug_line    0x0000000000002904      0x2c0 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
- .debug_line    0x0000000000002bc4      0x2b2 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
- .debug_line    0x0000000000002e76      0x2fb ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
- .debug_line    0x0000000000003171      0x5ad ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
- .debug_line    0x000000000000371e      0x5b5 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
- .debug_line    0x0000000000003cd3      0x2c8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
- .debug_line    0x0000000000003f9b      0x443 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
- .debug_line    0x00000000000043de      0x2f1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
- .debug_line    0x00000000000046cf      0x2ca ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
- .debug_line    0x0000000000004999      0x24c ../../../../../libopencm3//lib/libopencm3_stm32f4.a(systick.o)
- .debug_line    0x0000000000004be5      0x216 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(scb.o)
- .debug_line    0x0000000000004dfb      0x26f ../../../../../libopencm3//lib/libopencm3_stm32f4.a(nvic.o)
- .debug_line    0x000000000000506a      0x2a1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_all.o)
- .debug_line    0x000000000000530b      0x2c1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_idcache.o)
- .debug_line    0x00000000000055cc      0x20f ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
- .debug_line    0x00000000000057db      0x165 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
- .debug_line    0x0000000000005940       0xb2 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
- .debug_line    0x00000000000059f2      0x1aa /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-utoa.o)
+ .debug_line    0x000000000000158c      0x5d9 lcd-serial.o
+ .debug_line    0x0000000000001b65      0x523 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
+ .debug_line    0x0000000000002088      0x36e ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
+ .debug_line    0x00000000000023f6      0x2b3 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
+ .debug_line    0x00000000000026a9      0x261 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
+ .debug_line    0x000000000000290a      0x2c0 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
+ .debug_line    0x0000000000002bca      0x2b2 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
+ .debug_line    0x0000000000002e7c      0x2fb ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
+ .debug_line    0x0000000000003177      0x5ad ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
+ .debug_line    0x0000000000003724      0x5b5 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
+ .debug_line    0x0000000000003cd9      0x2c8 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
+ .debug_line    0x0000000000003fa1      0x443 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
+ .debug_line    0x00000000000043e4      0x2f1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
+ .debug_line    0x00000000000046d5      0x2ca ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
+ .debug_line    0x000000000000499f      0x24c ../../../../../libopencm3//lib/libopencm3_stm32f4.a(systick.o)
+ .debug_line    0x0000000000004beb      0x216 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(scb.o)
+ .debug_line    0x0000000000004e01      0x26f ../../../../../libopencm3//lib/libopencm3_stm32f4.a(nvic.o)
+ .debug_line    0x0000000000005070      0x2a1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_all.o)
+ .debug_line    0x0000000000005311      0x2c1 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_idcache.o)
+ .debug_line    0x00000000000055d2      0x20f ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
+ .debug_line    0x00000000000057e1      0x165 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
+ .debug_line    0x0000000000005946       0xb2 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000059f8      0x1aa /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-utoa.o)
 
-.debug_str      0x0000000000000000    0x19632
+.debug_str      0x0000000000000000    0x19638
  .debug_str     0x0000000000000000     0xba67 sdram.o
                                        0xbc5b (size before relaxing)
  .debug_str     0x000000000000ba67      0xcca clock.o
@@ -2251,49 +2251,49 @@ OUTPUT(lab4.elf elf32-littlearm)
                                        0xbcdb (size before relaxing)
  .debug_str     0x00000000000106f3     0x334b gfx.o
                                        0x6b88 (size before relaxing)
- .debug_str     0x0000000000013a3e     0x2c35 lab4.o
-                                      0x12609 (size before relaxing)
- .debug_str     0x0000000000016673      0x54a ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
+ .debug_str     0x0000000000013a3e     0x2c3b lcd-serial.o
+                                      0x1260f (size before relaxing)
+ .debug_str     0x0000000000016679      0x54a ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
                                        0x7628 (size before relaxing)
- .debug_str     0x0000000000016bbd      0x1c5 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
+ .debug_str     0x0000000000016bc3      0x1c5 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
                                        0x7312 (size before relaxing)
- .debug_str     0x0000000000016d82       0x71 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
+ .debug_str     0x0000000000016d88       0x71 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
                                        0x71b9 (size before relaxing)
- .debug_str     0x0000000000016df3       0x37 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
+ .debug_str     0x0000000000016df9       0x37 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
                                        0x6380 (size before relaxing)
- .debug_str     0x0000000000016e2a       0x60 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
+ .debug_str     0x0000000000016e30       0x60 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
                                        0x5d74 (size before relaxing)
- .debug_str     0x0000000000016e8a       0x61 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
+ .debug_str     0x0000000000016e90       0x61 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
                                        0x5d96 (size before relaxing)
- .debug_str     0x0000000000016eeb      0x475 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
+ .debug_str     0x0000000000016ef1      0x475 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
                                        0x9208 (size before relaxing)
- .debug_str     0x0000000000017360      0xad3 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
+ .debug_str     0x0000000000017366      0xad3 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
                                        0x991f (size before relaxing)
- .debug_str     0x0000000000017e33      0x30c ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
+ .debug_str     0x0000000000017e39      0x30c ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
                                        0x9c88 (size before relaxing)
- .debug_str     0x000000000001813f       0x50 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
+ .debug_str     0x0000000000018145       0x50 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
                                        0x9609 (size before relaxing)
- .debug_str     0x000000000001818f      0x1ea ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
+ .debug_str     0x0000000000018195      0x1ea ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
                                        0x9c8e (size before relaxing)
- .debug_str     0x0000000000018379       0x2d ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
+ .debug_str     0x000000000001837f       0x2d ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
                                        0x9a48 (size before relaxing)
- .debug_str     0x00000000000183a6      0xe72 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
+ .debug_str     0x00000000000183ac      0xe72 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
                                        0x662e (size before relaxing)
- .debug_str     0x0000000000019218       0xbd ../../../../../libopencm3//lib/libopencm3_stm32f4.a(systick.o)
+ .debug_str     0x000000000001921e       0xbd ../../../../../libopencm3//lib/libopencm3_stm32f4.a(systick.o)
                                        0x3c8c (size before relaxing)
- .debug_str     0x00000000000192d5       0x42 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(scb.o)
+ .debug_str     0x00000000000192db       0x42 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(scb.o)
                                        0x7cea (size before relaxing)
- .debug_str     0x0000000000019317       0xc4 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(nvic.o)
+ .debug_str     0x000000000001931d       0xc4 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(nvic.o)
                                        0x58a5 (size before relaxing)
- .debug_str     0x00000000000193db       0x64 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_all.o)
+ .debug_str     0x00000000000193e1       0x64 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_all.o)
                                        0x50cb (size before relaxing)
- .debug_str     0x000000000001943f       0x47 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_idcache.o)
+ .debug_str     0x0000000000019445       0x47 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(flash_common_idcache.o)
                                        0x50ed (size before relaxing)
- .debug_str     0x0000000000019486        0x6 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
+ .debug_str     0x000000000001948c        0x6 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(pwr.o)
                                        0x4cc9 (size before relaxing)
- .debug_str     0x000000000001948c      0x160 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
+ .debug_str     0x0000000000019492      0x160 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
                                         0x5e3 (size before relaxing)
- .debug_str     0x00000000000195ec       0x46 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-utoa.o)
+ .debug_str     0x00000000000195f2       0x46 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-utoa.o)
                                         0x5e6 (size before relaxing)
 
 .comment        0x0000000000000000       0x31
@@ -2303,7 +2303,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .comment       0x0000000000000031       0x32 console.o
  .comment       0x0000000000000031       0x32 lcd-spi.o
  .comment       0x0000000000000031       0x32 gfx.o
- .comment       0x0000000000000031       0x32 lab4.o
+ .comment       0x0000000000000031       0x32 lcd-serial.o
  .comment       0x0000000000000031       0x32 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .comment       0x0000000000000031       0x32 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .comment       0x0000000000000031       0x32 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2339,7 +2339,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .ARM.attributes
                 0x00000000000000e4       0x39 gfx.o
  .ARM.attributes
-                0x000000000000011d       0x39 lab4.o
+                0x000000000000011d       0x39 lcd-serial.o
  .ARM.attributes
                 0x0000000000000156       0x39 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .ARM.attributes
@@ -2391,7 +2391,7 @@ OUTPUT(lab4.elf elf32-littlearm)
  .debug_frame   0x000000000000008c       0xb0 console.o
  .debug_frame   0x000000000000013c       0xc4 lcd-spi.o
  .debug_frame   0x0000000000000200      0x3a8 gfx.o
- .debug_frame   0x00000000000005a8       0x58 lab4.o
+ .debug_frame   0x00000000000005a8       0x58 lcd-serial.o
  .debug_frame   0x0000000000000600      0x2b4 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
  .debug_frame   0x00000000000008b4      0x130 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
  .debug_frame   0x00000000000009e4       0x70 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
@@ -2449,7 +2449,7 @@ adc_disable_external_trigger_injected             ../../../../../libopencm3//lib
 adc_disable_external_trigger_regular              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_disable_overrun_interrupt                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_disable_scan_mode                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_disable_temperature_sensor                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_disable_vbat_sensor                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
 adc_enable_analog_watchdog_injected               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
@@ -2470,7 +2470,7 @@ adc_enable_scan_mode                              ../../../../../libopencm3//lib
 adc_enable_temperature_sensor                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_enable_vbat_sensor                            ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
 adc_eoc                                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_eoc_after_each                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_eoc_after_group                               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_eoc_injected                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
@@ -2478,12 +2478,12 @@ adc_get_flag                                      ../../../../../libopencm3//lib
 adc_get_overrun_flag                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_isr                                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 adc_power_off                                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_power_on                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_read_injected                                 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_read_regular                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_set_clk_prescale                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_set_continuous_conversion_mode                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_set_dma_continue                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
@@ -2493,21 +2493,21 @@ adc_set_injected_sequence                         ../../../../../libopencm3//lib
 adc_set_left_aligned                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_set_multi_mode                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
 adc_set_regular_sequence                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_set_resolution                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1_multi.o)
 adc_set_right_aligned                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_set_sample_time                               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
 adc_set_sample_time_on_all_channels               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_f47.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 adc_set_single_conversion_mode                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_set_watchdog_high_threshold                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_set_watchdog_low_threshold                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_start_conversion_injected                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
 adc_start_conversion_regular                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(adc_common_v1.o)
-                                                  lab4.o
-axis_data_x                                       lab4.o
-axis_data_y                                       lab4.o
-axis_data_z                                       lab4.o
+                                                  lcd-serial.o
+axis_data_x                                       lcd-serial.o
+axis_data_y                                       lcd-serial.o
+axis_data_z                                       lcd-serial.o
 blocking_handler                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 bus_fault_handler                                 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 can1_rx0_isr                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
@@ -2519,7 +2519,7 @@ can2_rx1_isr                                      ../../../../../libopencm3//lib
 can2_sce_isr                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 can2_tx_isr                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 clock_setup                                       clock.o
-                                                  lab4.o
+                                                  lcd-serial.o
 console_getc                                      console.o
 console_gets                                      console.o
 console_putc                                      console.o
@@ -2527,7 +2527,7 @@ console_putc                                      console.o
 console_puts                                      console.o
                                                   lcd-spi.o
 console_setup                                     console.o
-                                                  lab4.o
+                                                  lcd-serial.o
 cryp_isr                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 cur_frame                                         lcd-spi.o
 dcmi_isr                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
@@ -2593,31 +2593,31 @@ gfx_fillCircleHelper                              gfx.o
 gfx_fillRect                                      gfx.o
 gfx_fillRoundRect                                 gfx.o
 gfx_fillScreen                                    gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_fillTriangle                                  gfx.o
 gfx_getRotation                                   gfx.o
 gfx_height                                        gfx.o
 gfx_init                                          gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_puts                                          gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_setCursor                                     gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_setRotation                                   gfx.o
 gfx_setTextColor                                  gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_setTextSize                                   gfx.o
-                                                  lab4.o
+                                                  lcd-serial.o
 gfx_setTextWrap                                   gfx.o
 gfx_width                                         gfx.o
 gfx_write                                         gfx.o
 gpio_clear                                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
 gpio_get                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 gpio_mode_setup                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
                                                   console.o
                                                   sdram.o
@@ -2625,17 +2625,17 @@ gpio_port_config_lock                             ../../../../../libopencm3//lib
 gpio_port_read                                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
 gpio_port_write                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
 gpio_set                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
 gpio_set_af                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
                                                   console.o
                                                   sdram.o
 gpio_set_output_options                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_f0234.o)
                                                   sdram.o
 gpio_toggle                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(gpio_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 hard_fault_handler                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 hash_rng_isr                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 i2c1_er_isr                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
@@ -2646,16 +2646,16 @@ i2c3_er_isr                                       ../../../../../libopencm3//lib
 i2c3_ev_isr                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 initialization                                    lcd-spi.o
 itoa                                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-itoa.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 lcd_draw_pixel                                    lcd-spi.o
-                                                  lab4.o
+                                                  lcd-serial.o
 lcd_show_frame                                    lcd-spi.o
-                                                  lab4.o
+                                                  lcd-serial.o
 lcd_spi_init                                      lcd-spi.o
-                                                  lab4.o
+                                                  lcd-serial.o
 lcd_tft_err_isr                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 lcd_tft_isr                                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
-main                                              lab4.o
+main                                              lcd-serial.o
                                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 mem_manage_handler                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 msleep                                            clock.o
@@ -2720,7 +2720,7 @@ rcc_osc_ready_int_flag                            ../../../../../libopencm3//lib
 rcc_periph_clock_disable                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
 rcc_periph_clock_enable                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc_common_all.o)
                                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
                                                   console.o
                                                   sdram.o
@@ -2747,7 +2747,7 @@ rcc_set_sysclk_source                             ../../../../../libopencm3//lib
 rcc_system_clock_source                           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
 rcc_wait_for_osc_ready                            ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
 rcc_wait_for_sysclk_status                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(rcc.o)
-read_xyz                                          lab4.o
+read_xyz                                          lcd-serial.o
 recv_buf                                          console.o
 recv_ndx_cur                                      console.o
 recv_ndx_nxt                                      console.o
@@ -2763,7 +2763,7 @@ sdio_isr                                          ../../../../../libopencm3//lib
 sdram_command                                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
                                                   sdram.o
 sdram_init                                        sdram.o
-                                                  lab4.o
+                                                  lcd-serial.o
 sdram_timing                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(fmc_common_f47.o)
                                                   sdram.o
 spi1_isr                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
@@ -2783,14 +2783,14 @@ spi_disable_ss_output                             ../../../../../libopencm3//lib
 spi_disable_tx_buffer_empty_interrupt             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_disable_tx_dma                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_enable                                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   lcd-spi.o
 spi_enable_crc                                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_enable_error_interrupt                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_enable_rx_buffer_not_empty_interrupt          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_enable_rx_dma                                 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_enable_software_slave_management              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_enable_ss_output                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
                                                   lcd-spi.o
 spi_enable_tx_buffer_empty_interrupt              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
@@ -2798,45 +2798,45 @@ spi_enable_tx_dma                                 ../../../../../libopencm3//lib
 spi_init_master                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
                                                   lcd-spi.o
 spi_read                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_reset                                         ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_send                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_send_lsb_first                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_send_msb_first                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_baudrate_prescaler                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_bidirectional_mode                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_bidirectional_receive_only_mode           ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_bidirectional_transmit_only_mode          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_clock_phase_0                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_clock_phase_1                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_clock_polarity_0                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_clock_polarity_1                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_dff_16bit                                 ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
 spi_set_dff_8bit                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_v1.o)
 spi_set_full_duplex_mode                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_master_mode                               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_next_tx_from_buffer                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_next_tx_from_crc                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_nss_high                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_set_nss_low                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_receive_only_mode                         ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_slave_mode                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_standard_mode                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_set_unidirectional_mode                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 spi_write                                         ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
 spi_xfer                                          ../../../../../libopencm3//lib/libopencm3_stm32f4.a(spi_common_all.o)
                                                   lcd-spi.o
 strlen                                            /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strlen.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 sv_call_handler                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(vector.o)
 sys_tick_handler                                  clock.o
 systick_clear                                     ../../../../../libopencm3//lib/libopencm3_stm32f4.a(systick.o)
@@ -2888,7 +2888,7 @@ usart_disable_tx_complete_interrupt               ../../../../../libopencm3//lib
 usart_disable_tx_dma                              ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
 usart_disable_tx_interrupt                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
 usart_enable                                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_enable_error_interrupt                      ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
 usart_enable_idle_interrupt                       ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
@@ -2905,24 +2905,24 @@ usart_recv_blocking                               ../../../../../libopencm3//lib
 usart_send                                        ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
                                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
 usart_send_blocking                               ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
 usart_set_baudrate                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_set_databits                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_set_flow_control                            ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_set_mode                                    ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_set_parity                                  ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_set_stopbits                                ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
-                                                  lab4.o
+                                                  lcd-serial.o
                                                   console.o
 usart_wait_recv_ready                             ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_f124.o)
                                                   ../../../../../libopencm3//lib/libopencm3_stm32f4.a(usart_common_all.o)
