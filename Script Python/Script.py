@@ -65,25 +65,28 @@ while n<limit:
 
     battery = bn
 
-    msgx = '{"x":"'+ datos[0] + '"}'
-    msgy = '{"y":"'+ datos[1] + '"}'
-    msgz = '{"z":"'+ datos[2] + '"}'
+    msgx = '{"Aceleración en X":"'+ datos[0] + '"}'
+    msgy = '{"Aceleración en Y":"'+ datos[1] + '"}'
+    msgz = '{"Aceleración en Z":"'+ datos[2] + '"}'
+    msgbatteryp = '{"Porcentaje de batería":"'+ datos[3] + '"}'
 
     if (int(battery)<=30):
-        msgbattery = '{"Battery level":"Low level"}'
+        msgbatterys = '{"Battery level":"Low level"}'
     elif (int(battery)>=70):
-        msgbattery = '{"Battery level":"High level"}'
+        msgbatterys = '{"Battery level":"High level"}'
     elif (30<int(battery)<70):
-    	msgbattery = '{"Battery level":"Mid level"}'
+    	msgbatterys = '{"Battery level":"Mid level"}'
 
     client.publish(topic_pub, msgx)
     client.publish(topic_pub, msgy)
     client.publish(topic_pub, msgz)
-    client.publish(topic_pub, msgbattery)
+    client.publish(topic_pub, msgbatterys)
+    client.publish(topic_pub, msgbatteryp)
+
     sleep(0.1)
 
     i = i+4
     n = n+1
 
 
-print("La información se ha subido con éxito")
+print("La información se ha enviado con éxito")
