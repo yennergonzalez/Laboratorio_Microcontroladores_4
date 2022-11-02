@@ -7,6 +7,7 @@ La transmisión se puede deshabilitar al presionar el botón USER de la placa de
 
 ## Autores
 Yenner Josué González Araya - B83375
+
 Gabriel Barahona Otoya - B70896
 
 
@@ -18,7 +19,9 @@ Para cargar el firmware en la placa se deben tener los **contenidos** del direct
 Estando en este directorio se debe ejecutar la siguiente serie de comandos en la terminal:
 
 `make`
+
 `arm-none-eabi-objcopy -O binary lab4.elf  lab4.bin`
+
 `st-flash --reset write lab4.bin 0x8000000`
 
 
