@@ -83,7 +83,7 @@ while n<limit:
     client.publish(topic_pub, msgbatterys)
     client.publish(topic_pub, msgbatteryp)
 
-    sleep(0.1)
+    sleep(0.5)
 
     i = i+4
     n = n+1
